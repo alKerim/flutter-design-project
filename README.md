@@ -1,4 +1,4 @@
-# want_attention_app1
+# flutter-design-project
 
 A new Flutter application.
 
