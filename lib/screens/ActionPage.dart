@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:want_attention_app1/old_input_Page.dart';
-import 'package:want_attention_app1/old/justforTesting_storage.dart';
+import 'package:want_attention_app1/screens/old_input_Page.dart';
+//import 'package:want_attention_app1/old/justforTesting_storage.dart';
 
 import 'package:want_attention_app1/utils/database_helper.dart';
-import 'package:want_attention_app1/HistoryPageSliver.dart';
+//import 'package:want_attention_app1/screens/HistoryPageSliver.dart';
 
-import 'models/hEntry.dart';
+import '../models/hEntry.dart';
 
 class actionPage extends StatefulWidget {
   @override

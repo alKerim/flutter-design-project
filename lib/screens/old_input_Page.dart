@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+//import 'package:intl/intl.dart';
 import 'package:want_attention_app1/models/hEntry.dart';
 import 'package:want_attention_app1/utils/database_helper.dart';
 
-import 'package:flutter_picker/flutter_picker.dart';
+//import 'package:flutter_picker/flutter_picker.dart';
 
-import 'dart:developer';
+//import 'dart:developer';
 
 class inputPage extends StatefulWidget {
   final String appBarTitle;
@@ -35,30 +35,6 @@ class inputPageState extends State<inputPage> {
   inputPageState(this.hentry, this.appBarTitle);
 
 
-
-  /*createAlertDialog(BuildContext context) {
-    TextEditingController customController = TextEditingController();
-
-    return showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            //contentPadding: const EdgeInsets.only(top: 100.0),
-            title: Text("Test for heading"),
-            content: TextField(
-              controller: customController,
-            ),
-            actions: <Widget>[
-              MaterialButton(
-                elevation: 5.0,
-                child: Text("Submit"),
-                onPressed: () {},
-              )
-            ],
-          );
-        });
-  }*/
-
   @override
   Widget build(BuildContext context) {
     TextStyle textStyle = Theme.of(context).textTheme.title;
@@ -68,14 +44,13 @@ class inputPageState extends State<inputPage> {
     durationController.text = hentry.duration;
 
 
-    //return createAlertDialog(context);
+
 
     return WillPopScope(
       onWillPop: () {
         // Write some code to control things, when user press Back navigation button in device navigationBar
         moveToLastScreen();
       },
-
 
 
 

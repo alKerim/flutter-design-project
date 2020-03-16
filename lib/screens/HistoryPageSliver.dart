@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:want_attention_app1/models/hEntry.dart';
-import 'package:want_attention_app1/old_input_Page.dart';
+import 'package:want_attention_app1/screens/old_input_Page.dart';
 
 import 'package:want_attention_app1/utils/database_helper.dart';
-import 'package:want_attention_app1/HistoryPageSliver.dart';
+//import 'package:want_attention_app1/screens/HistoryPageSliver.dart';
 
 class historyPageSliver extends StatefulWidget {
   PageStorageKey pageStorageKey;
@@ -168,7 +168,7 @@ class _historyPageSliverState extends State<historyPageSliver> with AutomaticKee
 
   void updateListView(){
     databaseHelper = new DatabaseHelper();
-    final Future<Database> dbFuture = DatabaseHelper().initializeDatabase();
+    final Future<Database> dbFuture = DatabaseHelper().initializeDatabase(); //NULL pointer exception !!!!! find error
     dbFuture.then((database) {
       Future<List<hEntry>> hEntryListFuture = databaseHelper.getHEntryList();
       hEntryListFuture.then((hEntryList){

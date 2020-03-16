@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:want_attention_app1/old/HistoryPage.dart';
-import 'package:want_attention_app1/HistoryPageSliver.dart';
-import 'package:want_attention_app1/old/StatsPage.dart';
+import 'package:want_attention_app1/screens/HistoryPageSliver.dart';
 import 'package:want_attention_app1/utils/database_helper.dart';
 
-import 'ActionPage.dart';
-import 'StatsPageSliver.dart';
+import 'screens/ActionPage.dart';
+import 'screens/StatsPageSliver.dart';
 
 void main() => runApp(MyApp());
 
