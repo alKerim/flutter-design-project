@@ -51,7 +51,7 @@ class _historyPageSliverState extends State<historyPageSliver> with AutomaticKee
             icon: Icon(Icons.refresh),
             onPressed: (){
               //databaseHelper = DatabaseHelper();
-              updateListView();
+              //updateListView();
             },
           ),
         ),
@@ -64,16 +64,17 @@ class _historyPageSliverState extends State<historyPageSliver> with AutomaticKee
               return Container(
                     //color: Colors.orangeAccent,
                     alignment: Alignment.topCenter,
-                    child: historyEntry(
+                    child: historyEntry(0, "01.03.2020", "1 hour", 8.3, "Sofia")
+                /*historyEntry(
                         index, //the index is passed because the historyEntry-widget can't access the index
                         this.hEntryList[index].date,
                         this.hEntryList[index].duration,
                         this.hEntryList[index].score,
-                        this.hEntryList[index].name),
+                        this.hEntryList[index].name),*/
               );
             },
             //the count of the amount of "Objects" in list... in this case x times the number of items in the column-widget above
-            childCount: count,
+            childCount: 10//count,
           ),
         ),
       ]),
@@ -155,7 +156,7 @@ class _historyPageSliverState extends State<historyPageSliver> with AutomaticKee
           //when history entry is tapped
           onTap: () {
             debugPrint("historyEntry Tapped");
-            navigateToDetail(this.hEntryList[index],"Edit Action");
+            //navigateToDetail(this.hEntryList[index],"Edit Action");
             //navigateToDetail('Edit Note');
           },
         ),
